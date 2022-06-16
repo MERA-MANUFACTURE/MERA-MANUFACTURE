@@ -50,15 +50,13 @@
             </div>
             <!-- nav-button-wrap end-->
             <!-- header-search button  -->
-            <div class="header-search-button">
+            <!-- <div class="header-search-button">
                 <i class="fal fa-search"></i>
                 <span>Search...</span>
-            </div>
+            </div> -->
             <!-- header-search button end  -->
             <!--  add new  btn -->
-            <div class="add-list_wrap">
-                <a href="dashboard-add-listing.html" class="add-list color-bg"><i class="fal fa-plus"></i> <span>Add Listing</span></a>
-            </div>
+
             <!--  add new  btn end -->
             <!--  header-opt_btn -->
             <div class="header-opt_btn tolt" data-microtip-position="bottom" data-tooltip="Language / Currency">
@@ -66,85 +64,74 @@
             </div>
             <!--  header-opt_btn end -->
             <!--  cart-btn   -->
-            <div class="cart-btn  tolt show-header-modal" data-microtip-position="bottom" data-tooltip="Your Wishlist / Compare">
+            <!-- <div class="cart-btn  tolt show-header-modal" data-microtip-position="bottom" data-tooltip=" / Compare">
                 <i class="fal fa-bell"></i>
                 <span class="cart-btn_counter color-bg">5</span>
-            </div>
+            </div> -->
             <!--  cart-btn end -->
             <!--  login btn -->
-            <div class="show-reg-form modal-open"><i class="fas fa-user"></i><span>Sign In</span></div>
+
+            <div class="show-reg-form ">
+                <a href="/templates/login.html">
+                    <i class="fas fa-user"></i>Log in
+                </a>
+            </div>
+
             <!--  login btn  end -->
             <!--  navigation -->
             <div class="nav-holder main-menu">
                 <nav>
                     <ul class="no-list-style">
                         <li>
-                            <a href="#">Home <i class="fa fa-caret-down"></i></a>
-                            <!--second level -->
-                            <ul>
-                                <li><a href="index.html">Parallax Image</a></li>
-                                <li><a href="index2.html">Slider</a></li>
-                                <li><a href="index3.html">Video</a></li>
-                                <li><a href="index4.html">Slideshow</a></li>
-                                <li><a href="dark/index.html" target="_blank">Dark Demo</a></li>
-                            </ul>
-                            <!--second level end-->
+                            <a href="#" class="act-link">Home </a>
                         </li>
                         <li>
-                            <a href="#" class="act-link">Listings <i class="fa fa-caret-down"></i></a>
-                            <!--second level -->
-                            <ul>
-                                <li><a href="listing.html">Column map</a></li>
-                                <li><a href="listing2.html">Column map 2</a></li>
-                                <li><a href="listing3.html">Fullwidth Map</a></li>
-                                <li><a href="listing4.html">Fullwidth Map 2</a></li>
-                                <li><a href="listing5.html">Without Map</a></li>
-                                <li><a href="listing6.html">Without Map 2</a></li>
-                                <li>
-                                    <a href="#">Single <i class="fa fa-caret-down"></i></a>
-                                    <!--third  level  -->
-                                    <ul>
-                                        <li><a href="listing-single.html">Style 1</a></li>
-                                        <li><a href="listing-single2.html">Style 2</a></li>
-                                        <li><a href="listing-single3.html">Style 3</a></li>
-                                    </ul>
-                                    <!--third  level end-->
-                                </li>
-                            </ul>
-                            <!--second level end-->
+                            <a href="#">About us </a>
+
                         </li>
                         <li>
-                            <a href="#">Agents<i class="fa fa-caret-down"></i></a>
-                            <!--second level -->
-                            <ul>
-                                <li><a href="agent-list.html">Agent List</a></li>
-                                <li><a href="agency-list.html">Agency List</a></li>
-                                <li><a href="agent-single.html">Agent Single</a></li>
-                                <li><a href="agency-single.html">Agency Single</a></li>
-                            </ul>
-                            <!--second level end-->
+                            <a href="templates/register.html">Register now</a>
+
                         </li>
-                        <li>
-                            <a href="blog.html">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Pages <i class="fa fa-caret-down"></i></a>
-                            <!--second level -->
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="help.html">Help FAQ</a></li>
-                                <li><a href="pricing.html">Pricing </a></li>
-                                <li><a href="dashboard.html">User Dashboard</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                                <li><a href="compare.html">Compare</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                            <!--second level end-->
-                        </li>
+
+
                     </ul>
                 </nav>
+            </div>
+            <!-- navigation  end -->
+            <!-- header-search-wrapper -->
+            <div class="header-search-wrapper novis_search">
+                <!-- <div class="header-serach-menu">
+                    <div class="custom-switcher fl-wrap">
+                        <div class="fieldset fl-wrap">
+                            <input type="radio" name="duration-1" id="buy_sw" class="tariff-toggle" checked="">
+                            <label for="buy_sw">Buy</label>
+                            <input type="radio" name="duration-1" class="tariff-toggle" id="rent_sw">
+                            <label for="rent_sw" class="lss_lb">Rent</label>
+                            <span class="switch color-bg"></span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="custom-form">
+                    <form method="post" name="registerform">
+                        <label>Keywords </label>
+                        <input type="text" placeholder="Address , Street , State..." value="">
+                        <label>Categories</label>
+                        <select data-placeholder="Categories" class="chosen-select on-radius no-search-select">
+                                <option>All Categories</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Hotel</option>
+                                <option>Villa</option>
+                                <option>Office</option>
+                            </select>
+                        <label style="margin-top:10px;">Price Range</label>
+                        <div class="price-rage-item fl-wrap">
+                            <input type="text" class="price-range" data-min="100" data-max="100000" name="price-range1" data-step="1" value="1" data-prefix="$">
+                        </div>
+                        <button onclick="location.href='listing.html'" type="button" class="btn float-btn color-bg"><i class="fal fa-search"></i> Search</button>
+                    </form>
+                </div>
             </div>
             <!-- navigation  end -->
             <!-- header-search-wrapper -->
@@ -480,6 +467,98 @@
                                                     <li>
                                                         <input id="check-b" type="radio" name="check">
                                                         <label for="check-b">C</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">D</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">E</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">F</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">G</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">H</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">I</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">J</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">K</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">L</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">M</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">N</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">O</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">P</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">Q</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">R</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">S</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">T</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">U</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">V</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">W</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">X</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">Y</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="check-b" type="radio" name="check">
+                                                        <label for="check-b">Z</label>
                                                     </li>
 
 
